@@ -11,9 +11,11 @@ window.portfolioConfig = {
   },
   theme: {
     colors: {
-      primary: "blue", // Tailwind color name (e.g., blue, indigo, teal)
-      background: "gray-900", // Dark mode background
-      text: "gray-100"
+      primary: "amber", // Tailwind color name (e.g., blue, indigo, teal) blue
+      background: "neutral-800", // Dark mode background gray-900
+      text: "gray-100", //gray-100
+      glow: "amber-500",
+      cardHeader: "stone-700"
     }
   },
   skills: [

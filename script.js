@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     profilePic.src = profile.picture;
     profilePic.className += ` ${primaryBorder}`;
 
+    const profileGlow = document.getElementById('profile-glow');
+    if (profileGlow && colors.glow) {
+        profileGlow.classList.add(`bg-${colors.glow}`);
+    }
+
     // Social Links
     const socialContainer = document.getElementById('social-links');
     if (profile.social) {
