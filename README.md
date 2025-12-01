@@ -1,40 +1,22 @@
-# My Portfolio Project
+# Dynamic Portfolio Website
 
-Welcome to my personal portfolio! This repository showcases a collection of my work, projects, and skills as a software developer. Here you'll find examples of applications I've built, problems I've solved, and technologies I've explored.
+This project is a single-page, dynamic portfolio website. The content is loaded from a JavaScript configuration file, allowing for easy updates without altering the HTML structure.
 
-## About Me
+## Technical Implementation
 
-I am a passionate software developer with a strong interest in [mention your specific interests, e.g., web development, machine learning, data science, mobile development]. I enjoy creating efficient, scalable, and user-friendly applications. My goal is to continuously learn and grow in the ever-evolving world of technology.
+The portfolio operates using client-side JavaScript to build the page dynamically.
 
-## Projects
+*   **`index.html`**: The main HTML file that provides the basic structure and layout for the portfolio. It includes placeholders for content that will be populated by JavaScript. It also loads the Tailwind CSS framework via a CDN for styling.
 
-Below is a list of some of the projects included in this portfolio. Each project typically has its own `README.md` file with more detailed information, setup instructions, and a description of the technologies used.
+*   **`config.js`**: This file acts as a centralized database for the portfolio's content. It contains a single configuration object (`portfolioConfig`) where all personal data is stored, including:
+    *   Profile information (name, tagline, description, social links).
+    *   Theme settings, such as primary and background colors that map to Tailwind CSS classes.
+    *   Lists of technical skills and featured projects.
 
-*   **Project 1: [Name of Project 1]**
-    *   A brief description of Project 1.
-    *   Technologies used: [e.g., HTML, CSS, JavaScript, React, Node.js, Python, etc.]
-*   **Project 2: [Name of Project 2]**
-    *   A brief description of Project 2.
-    *   Technologies used: [e.g., HTML, CSS, JavaScript, React, Node.js, Python, etc.]
-*   **Project 3: [Name of Project 3]**
-    *   A brief description of Project 3.
-    *   Technologies used: [e.g., HTML, CSS, JavaScript, React, Node.js, Python, etc.]
+*   **`script.js`**: This script runs when the DOM is fully loaded. It reads the `portfolioConfig` object from `config.js` and injects the data into the appropriate elements in `index.html`. It dynamically creates the skill badges and project cards based on the arrays defined in the configuration.
 
-## Skills
+## How to Use
 
-*   **Programming Languages:** [e.g., JavaScript, Python, Java, C++, Go, TypeScript]
-*   **Frontend Development:** [e.g., React, Angular, Vue.js, HTML5, CSS3, SASS, Bootstrap]
-*   **Backend Development:** [e.g., Node.js, Express, Django, Flask, Ruby on Rails, Spring Boot]
-*   **Databases:** [e.g., MongoDB, PostgreSQL, MySQL, SQLite, Firebase]
-*   **Tools & Platforms:** [e.g., Git, Docker, AWS, Azure, Google Cloud, VS Code, npm, yarn]
-*   **Other:** [e.g., Agile Methodologies, RESTful APIs, TDD, CI/CD]
-
-## Contact
-
-Feel free to reach out if you have any questions, opportunities, or just want to connect!
-
-*   **Email:** [Your Email Address]
-*   **LinkedIn:** [Your LinkedIn Profile URL]
-*   **GitHub:** [Your GitHub Profile URL]
-
-Thank you for visiting my portfolio!
+1.  **Edit `config.js`**: Open the `config.js` file and modify the values within the `portfolioConfig` object to reflect your own information, projects, and skills.
+2.  **Update Assets**: Replace the images in the `assets/` directory (like `profile.png` and `favicon.png`) with your own.
+3.  **Open `index.html`**: Open the `index.html` file in a web browser to see your customized portfolio. There is no build step required.
