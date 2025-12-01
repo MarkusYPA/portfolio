@@ -15,7 +15,6 @@ window.portfolioConfig = {
       background: "neutral-800", // Dark mode background gray-900
       text: "gray-100", //gray-100
       glow: "amber-500",
-      cardHeader: "stone-700"
     }
   },
   skills: [
@@ -27,19 +26,19 @@ window.portfolioConfig = {
       title: "Project Alpha",
       description: "A high-performance web server written in Go. Handles thousands of concurrent connections with ease.",
       link: "https://github.com/your-username/project-alpha",
-      image: "https://placehold.co/600x400/1a202c/ffffff?text=Project+Alpha"
+      image: "https://placehold.co/600x400/202020/ffffff?text=Project+Alpha"
     },
     {
       title: "Beta App",
       description: "A Vue.js frontend for a distributed task manager. Features real-time updates via WebSockets.",
       link: "https://github.com/your-username/beta-app",
-      image: "https://placehold.co/600x400/1a202c/ffffff?text=Beta+App"
+      image: "https://placehold.co/600x400/202020/ffffff?text=Beta+App"
     },
     {
       title: "Gamma Tool",
       description: "CLI tool built with Rust for automating cloud infrastructure deployments.",
       link: "https://github.com/your-username/gamma-tool",
-      image: "https://placehold.co/600x400/1a202c/ffffff?text=Gamma+Tool"
+      image: "https://placehold.co/600x400/202020/ffffff?text=Gamma+Tool"
     }
   ]
 };
