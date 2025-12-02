@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Social Links
     const socialContainer = document.getElementById('social-links');
+    if (profile.email) {
+            const link = document.createElement('a');
+            link.href = "mailto:" + profile.email;
+            link.target = '_blank';
+            link.className = `px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${primaryBg} text-white`;
+            link.textContent = "Email";
+            socialContainer.appendChild(link);
+    }
     if (profile.social) {
         Object.entries(profile.social).forEach(([platform, url]) => {
             const link = document.createElement('a');
