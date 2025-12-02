@@ -3,7 +3,7 @@ window.portfolioConfig = {
     name: "Markus Amberla",
     tagline: "Aspiring Full Stack Developer | Student at grit:lab",
     description: "I’m studying coding at grit:lab on Åland. It's a two year practice centered education. We've done six months of Go, six months of JavaScript and now I'm doing projects mostly in Rust. I've tinkered with PCs since the mid 90s, dabbling in coding at times and am now turning my passion into a professionally applicable form.",
-    picture: "assets/enempi.jpg",
+    picture: "assets/profile.jpg",
     email: "markus.amberla@gmail.com",
     social: {
       linkedin: "https://www.linkedin.com/in/markusamberla/",

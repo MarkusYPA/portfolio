@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Theme Colors ---
-    //  Colors object not used do to compatibility with Tailwind CLI so find and replace to change theme colors
+    //  Colors object not used due to compatibility with Tailwind CLI
+    //  so find and replace to change theme colors
     /*  
         primary: "amber",
         background: "neutral-800",
