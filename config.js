@@ -41,7 +41,7 @@ window.portfolioConfig = {
     },
     {
       title: "Hyzer Sky",
-      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write code by necessity while doing it which sparked my drive to learn to become a prope developer.",
+      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write code by necessity while doing it which sparked my drive to learn to become a proper developer.",
       link: "https://store.steampowered.com/app/1293000/Hyzer_Sky/",
       image: "assets/hyzersky.png"
     },
