@@ -12,7 +12,7 @@ window.portfolioConfig = {
   },
   skills: [
     "Go", "JavaScript", "Rust", "CSS", "HTML5", "Websockets",
-    "Vue", "SQL", "GraphQL", "Postman", "Docker", "Unity"
+    "Vue", "SQL", "GraphQL", "Postman", "Docker", "Unity", "C#", "Django",
   ],
   projects_title: {
     title: "Featured Projects",
@@ -33,7 +33,7 @@ window.portfolioConfig = {
     },
     {
       title: "Hyzer Sky",
-      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write code by necessity while doing it which sparked my drive to learn to become a proper developer.",
+      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write C# by necessity while doing it which sparked my drive to learn to become a proper developer.",
       link: "https://store.steampowered.com/app/1293000/Hyzer_Sky/",
       image: "assets/hyzersky.png"
     },
