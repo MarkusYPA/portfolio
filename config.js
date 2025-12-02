@@ -10,14 +10,6 @@ window.portfolioConfig = {
       github: "https://github.com/MarkusYPA"
     }
   },
-  theme: {
-    colors: {
-      primary: "amber", // Tailwind color name (e.g., blue, indigo, teal)
-      background: "neutral-800",
-      text: "gray-100",
-      glow: "amber-500",
-    }
-  },
   skills: [
     "Go", "JavaScript", "Rust", "CSS", "HTML5", "Websockets",
     "Vue", "SQL", "GraphQL", "Postman", "Docker", "Unity"

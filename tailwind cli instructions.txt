@@ -1,0 +1,9 @@
+1. Start npm project
+npm init -y
+
+2. Install tailwind css and its CLI
+npm install tailwindcss @tailwindcss/cli
+
+3. Build final css. Use 'watch' flag to update automatically
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
