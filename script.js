@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsContainer.appendChild(badge);
     });
 
+    // --- Projects Description ---
+    const projectsTitle = document.getElementById('projects-title');
+    if (config.projects_title.title && projectsTitle) {
+        projectsTitle.textContent = config.projects_title.title;
+    }
+    const projectsDescription = document.getElementById('projects-description');
+    if (config.projects_title.description && projectsDescription) {
+        projectsDescription.textContent = config.projects_title.description;
+    }
+
     // --- Projects Section ---
     const projectsContainer = document.getElementById('projects-grid');
     (config.projects || []).forEach(project => {

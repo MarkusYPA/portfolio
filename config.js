@@ -1,8 +1,8 @@
 window.portfolioConfig = {
   profile: {
     name: "Markus Amberla",
-    tagline: "Full Stack Developer | Go & Rust Enthusiast",
-    description: "I build robust and scalable applications. Passionate about clean code, performance, and exploring new technologies.",
+    tagline: "Aspiring Full Stack Developer | Student at grit:lab",
+    description: "I’m studying coding at grit:lab on Åland. It's a two year practice centered education. We've done six months of Go, six months of JavaScript and now I'm doing projects mostly in Rust. I've tinkered with PCs since the mid 90s, dabbling in coding at times and am now turning my passion into a professionally applicable form.",
     picture: "assets/enempi.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/markusamberla/",
@@ -11,20 +11,24 @@ window.portfolioConfig = {
   },
   theme: {
     colors: {
-      primary: "amber", // Tailwind color name (e.g., blue, indigo, teal) blue
-      background: "neutral-800", // Dark mode background gray-900
-      text: "gray-100", //gray-100
+      primary: "amber", // Tailwind color name (e.g., blue, indigo, teal)
+      background: "neutral-800",
+      text: "gray-100",
       glow: "amber-500",
     }
   },
   skills: [
-    "Go", "JavaScript", "Rust", "CSS", "HTML5",
-    "Vue", "SQL", "GraphQL", "Postman", "Docker"
+    "Go", "JavaScript", "Rust", "CSS", "HTML5", "Websockets",
+    "Vue", "SQL", "GraphQL", "Postman", "Docker", "Unity"
   ],
+  projects_title: {
+    title: "Featured Projects",
+    description: "All but Hyzer Sky are student projects in the 01 Edu curriculum, done at grit:lab on the Åland Islands. Most are have been done in groups of 1-6 people in 1-4 weeks.",
+  },
   projects: [
     {
       title: "Multiplayer FPS",
-      description: "Rust server and client that runs a self written raycaster game engine.",
+      description: "Rust server and client running a self written raycaster game engine.",
       link: "https://github.com/MarkusYPA/fps",
       image: "assets/blobhunter.png"
     },
@@ -36,7 +40,7 @@ window.portfolioConfig = {
     },
     {
       title: "Hyzer Sky",
-      description: "Single player disc golf game, released on Steam. I learned to write code by necessity while doing it which sparked my drive to learn to become a prope developer.",
+      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write code by necessity while doing it which sparked my drive to learn to become a prope developer.",
       link: "https://store.steampowered.com/app/1293000/Hyzer_Sky/",
       image: "assets/hyzersky.png"
     },
