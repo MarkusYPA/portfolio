@@ -5,49 +5,48 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // --- Theme Setup ---
-    const theme = config.theme || {};
-    const colors = theme.colors || { primary: 'blue', background: 'gray-900', text: 'gray-100' };
+    // --- Theme Colors ---
+    //  Colors object not used do to compatibility with Tailwind CLI so find and replace to change theme colors
+    /*  
+        primary: "amber",
+        background: "neutral-800",
+        text: "gray-100",
+    */
 
-    document.body.className = `bg-${colors.background} text-${colors.text} antialiased transition-colors duration-300`;
-
-    // Helper to get primary color class
-    const primaryText = `text-${colors.primary}-400`;
-    const primaryBg = `bg-${colors.primary}-600`;
-    const primaryBorder = `border-${colors.primary}-500`;
+    document.body.className = `bg-neutral-800 text-gray-100 antialiased transition-colors duration-300`;
 
     // --- Profile Section ---
     const profile = config.profile || {};
     document.getElementById('profile-name').textContent = profile.name;
     document.getElementById('profile-tagline').textContent = profile.tagline;
-    document.getElementById('profile-tagline').className += ` ${primaryText}`;
+    document.getElementById('profile-tagline').className += ` text-amber-400`;
     document.getElementById('profile-description').textContent = profile.description;
 
     const profilePic = document.getElementById('profile-picture');
     profilePic.src = profile.picture;
-    profilePic.className += ` ${primaryBorder}`;
+    profilePic.className += ` border-amber-500`;
 
     const profileGlow = document.getElementById('profile-glow');
-    if (profileGlow && colors.glow) {
-        profileGlow.classList.add(`bg-${colors.glow}`);
+    if (profileGlow) {
+        profileGlow.classList.add(`bg-amber-500`);
     }
 
     // Social Links
     const socialContainer = document.getElementById('social-links');
     if (profile.email) {
-            const link = document.createElement('a');
-            link.href = "mailto:" + profile.email;
-            link.target = '_blank';
-            link.className = `px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${primaryBg} text-white`;
-            link.textContent = "Email";
-            socialContainer.appendChild(link);
+        const link = document.createElement('a');
+        link.href = "mailto:" + profile.email;
+        link.target = '_blank';
+        link.className = `px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg bg-amber-600 text-white`;
+        link.textContent = "Email";
+        socialContainer.appendChild(link);
     }
     if (profile.social) {
         Object.entries(profile.social).forEach(([platform, url]) => {
             const link = document.createElement('a');
             link.href = url;
             link.target = '_blank';
-            link.className = `px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${primaryBg} text-white`;
+            link.className = `px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg bg-amber-600 text-white`;
             link.textContent = platform.charAt(0).toUpperCase() + platform.slice(1);
             socialContainer.appendChild(link);
         });
@@ -87,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         content.className = 'p-6 flex-grow flex flex-col';
 
         const title = document.createElement('h3');
-        title.className = `text-xl font-bold mb-2 ${primaryText}`;
+        title.className = `text-xl font-bold mb-2 text-amber-400`;
         title.textContent = project.title;
 
         const desc = document.createElement('p');
