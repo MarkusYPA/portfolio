@@ -63,18 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Projects Description ---
-    const projectsTitle = document.getElementById('projects-title');
-    if (config.projects_title.title && projectsTitle) {
-        projectsTitle.textContent = config.projects_title.title;
+    const projectsTitle = document.getElementById('school-projects-title');
+    if (config.school_projects_title.title && projectsTitle) {
+        projectsTitle.textContent = config.school_projects_title.title;
     }
-    const projectsDescription = document.getElementById('projects-description');
-    if (config.projects_title.description && projectsDescription) {
-        projectsDescription.textContent = config.projects_title.description;
+    const projectsDescription = document.getElementById('school-projects-description');
+    if (config.school_projects_title.description && projectsDescription) {
+        projectsDescription.textContent = config.school_projects_title.description;
     }
 
     // --- Projects Section ---
-    const projectsContainer = document.getElementById('projects-grid');
-    (config.projects || []).forEach(project => {
+    const projectsContainer = document.getElementById('school-projects-grid');
+    (config.school_projects || []).forEach(project => {
         const card = document.createElement('div');
         card.className = `glass-card rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col`;
 

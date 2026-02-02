@@ -14,11 +14,42 @@ window.portfolioConfig = {
     "Go", "JavaScript", "Rust", "CSS", "HTML5", "Websockets",
     "Vue", "SQL", "GraphQL", "Postman", "Docker", "Unity", "C#", "Django",
   ],
-  projects_title: {
-    title: "Featured Projects",
-    description: "All but Hyzer Sky are student projects in the 01 Edu curriculum, done at grit:lab on the Åland Islands. Most are have been done in groups of 1-6 people in 1-4 weeks.",
+  side_projects_title: {
+    title: "Side Projects",
+    description: "Stuff that I've been up to on the side",
   },
-  projects: [
+  commercial_projects_title: {
+    title: "Commercial Projects",
+    description: "Projects with a commercial dimension",
+  },
+  school_projects_title: {
+    title: "School Projects",
+    description: "These are student projects in the 01 Edu curriculum, done at grit:lab on the Åland Islands. Most are have been done in groups of 1-6 people in 1-4 weeks.",
+  },
+  side_projects: [
+    {
+      title: "Kaleidoscope",
+      description: "Full page kaleidoscope view with adjustments and randomizations.",
+      link: "https://markusypa.github.io/kaleidoscope/",
+      image: "assets/kaleidoscope.png"
+
+    }
+  ],
+  commercial_projects: [
+    {
+      title: "Ålands Idrott Funding Calculator",
+      description: "Automate the calculation of member club's funding based on attendance statistics and membersips from different data source and provide statistics. Started as a hackathon win.",
+      //link: "",
+      image: "assets/alandsidrott.png"
+    },
+    {
+      title: "Hyzer Sky",
+      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write C# by necessity while doing it which sparked my drive to learn to become a proper developer.",
+      link: "https://store.steampowered.com/app/1293000/Hyzer_Sky/",
+      image: "assets/hyzersky.png"
+    }
+  ],
+  school_projects: [
     {
       title: "Multiplayer FPS",
       description: "Rust server and client running a self written raycaster game engine.",
@@ -30,12 +61,6 @@ window.portfolioConfig = {
       description: "A single-threaded, non-blocking HTTP/1.1 server in Rust, serves static web pages and executes CGI scripts. Supports a flexible configuration system for hosts, ports, routes, error pages etc.",
       link: "https://github.com/MarkusYPA/localhost",
       image: "assets/localhost.png"
-    },
-    {
-      title: "Hyzer Sky",
-      description: "Single player disc golf game, developed in Unity and released on Steam. I learned to write C# by necessity while doing it which sparked my drive to learn to become a proper developer.",
-      link: "https://store.steampowered.com/app/1293000/Hyzer_Sky/",
-      image: "assets/hyzersky.png"
     },
     {
       title: "Filler",
