@@ -61,26 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         badge.textContent = skill;
         skillsContainer.appendChild(badge);
     });
-
-    // --- Projects Description ---
-    const projectsTitle = document.getElementById('school-projects-title');
-    if (config.school_projects_title.title && projectsTitle) {
-        projectsTitle.textContent = config.school_projects_title.title;
-    }
-    const projectsDescription = document.getElementById('school-projects-description');
-    if (config.school_projects_title.description && projectsDescription) {
-        projectsDescription.textContent = config.school_projects_title.description;
-    }
-
-    // --- Projects Section ---
-    const projectsContainer = document.getElementById('school-projects-grid');
-    (config.school_projects || []).forEach(project => {
+    // --- Projects Sections (generic renderer) ---
+    const createProjectCard = (project) => {
         const card = document.createElement('div');
         card.className = `glass-card rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col`;
 
         const img = document.createElement('img');
         img.src = project.image || 'https://via.placeholder.com/600x400';
-        img.alt = project.title;
+        img.alt = project.title || '';
         img.className = 'w-full h-48 object-cover';
 
         const content = document.createElement('div');
@@ -88,26 +76,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const title = document.createElement('h3');
         title.className = `text-xl font-bold mb-2 text-amber-400`;
-        title.textContent = project.title;
+        title.textContent = project.title || '';
 
         const desc = document.createElement('p');
         desc.className = 'text-sm opacity-80 mb-6 flex-grow leading-relaxed';
-        desc.textContent = project.description;
+        desc.textContent = project.description || '';
 
-        const link = document.createElement('a');
-        link.href = project.link;
-        link.target = '_blank';
-        link.className = 'inline-flex items-center text-sm font-semibold hover:underline mt-auto';
-        link.innerHTML = `View Project <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>`;
+        let link = null;
+        if (project.link) {
+            link = document.createElement('a');
+            link.href = project.link || '#';
+            if (project.link) link.target = '_blank';
+            link.className = 'inline-flex items-center text-sm font-semibold hover:underline mt-auto';
+            link.innerHTML = `View Project <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>`;
+        }
 
         content.appendChild(title);
         content.appendChild(desc);
-        content.appendChild(link);
+
+        if (link) {
+            content.appendChild(link);
+        }
 
         card.appendChild(img);
         card.appendChild(content);
-        projectsContainer.appendChild(card);
-    });
+        return card;
+    };
+
+    const renderProjects = (sectionHyphen) => {
+        const key = sectionHyphen.replace(/-/g, '_');
+        const titleCfg = config[`${key}_title`] || {};
+
+        const titleEl = document.getElementById(`${sectionHyphen}-title`);
+        if (titleCfg.title && titleEl) titleEl.textContent = titleCfg.title;
+
+        const descEl = document.getElementById(`${sectionHyphen}-description`);
+        if (titleCfg.description && descEl) descEl.textContent = titleCfg.description;
+
+        const container = document.getElementById(`${sectionHyphen}-grid`);
+        if (!container) return;
+
+        (config[key] || []).forEach(project => {
+            container.appendChild(createProjectCard(project));
+        });
+    };
+
+    // Render all project sections declared in config
+    ['school-projects', 'side-projects', 'commercial-projects'].forEach(renderProjects);
 
     // --- Footer ---
     document.getElementById('year').textContent = new Date().getFullYear();

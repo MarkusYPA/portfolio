@@ -38,7 +38,7 @@ window.portfolioConfig = {
   commercial_projects: [
     {
       title: "Ålands Idrott Funding Calculator",
-      description: "Automate the calculation of member club's funding based on attendance statistics and membersips from different data source and provide statistics. Started as a hackathon win.",
+      description: "Automates the calculation of member clubs' funding based on attendance statistics and membersips from different data source and provide statistics. Started as a hackathon win.",
       //link: "",
       image: "assets/alandsidrott.png"
     },
