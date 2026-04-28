@@ -33,6 +33,13 @@ window.portfolioConfig = {
       link: "https://markusypa.github.io/kaleidoscope/",
       image: "assets/kaleidoscope.png"
 
+    },
+    {
+      title: "BI Solutions Data Visualizer",
+      description: "A data integration pipeline and data warehouse combining tourism, grocery sales, and demographic data from Åland municipalities, with Power BI dashboards and visualizations.",
+      link: "https://github.com/MarkusYPA/bi-data-integration",
+      image: "assets/bisolutions.png"
+
     }
   ],
   commercial_projects: [
