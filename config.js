@@ -40,6 +40,13 @@ window.portfolioConfig = {
       link: "https://github.com/MarkusYPA/bi-data-integration",
       image: "assets/bisolutions.png"
 
+    },
+    {
+      title: "Portfolio Website",
+      description: "This very page, an easily editable HTML, CSS, and JavaScript portfolio site designed for deployment on GitHub Pages.",
+      link: "https://github.com/MarkusYPA/portfolio",
+      image: "assets/portfolio.png"
+
     }
   ],
   commercial_projects: [
