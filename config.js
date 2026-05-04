@@ -16,15 +16,15 @@ window.portfolioConfig = {
   ],
   side_projects_title: {
     title: "Side Projects",
-    description: "Stuff that I've been up to on the side",
+    description: "Things that I've done on the side for different reasons",
   },
   commercial_projects_title: {
-    title: "Commercial Projects",
-    description: "Projects with a commercial dimension",
+    title: "Independent Projects",
+    description: "Projects done outside studies that I got paid for",
   },
   school_projects_title: {
     title: "School Projects",
-    description: "These are student projects in the 01 Edu curriculum, done at grit:lab on the Åland Islands. Most are have been done in groups of 1-6 people in 1-4 weeks.",
+    description: "Student projects in the 01 Edu curriculum, done at grit:lab on the Åland Islands. Most are have been done in groups of 1-6 people in 1-4 weeks.",
   },
   side_projects: [
     {
