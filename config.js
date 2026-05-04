@@ -65,6 +65,18 @@ window.portfolioConfig = {
   ],
   school_projects: [
     {
+      title: "Code Keeper",
+      description: "CI and CD pipelines to deploy a microservices app to AWS through GitLab, using Ansible, Terraform and Docker.",
+      link: "https://github.com/MarkusYPA/code-keeper-infrastructure",
+      image: "assets/codekeeper.png"
+    },
+    {
+      title: "Orchestrator",
+      description: "Microservices app running locally in Kubernetes, using YAML manifests, K3s and Vagrant.",
+      link: "https://github.com/MarkusYPA/orchestrator",
+      image: "assets/orchestrator.png"
+    },
+    {
       title: "Multiplayer FPS",
       description: "Rust server and client running a self written raycaster game engine.",
       link: "https://github.com/MarkusYPA/fps",
