@@ -41,14 +41,29 @@
 
         <!-- Hero Section -->
         <header class="container mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center justify-between">
-            <div class="md:w-1/2 text-center md:text-left mt-10 md:mt-0">
-                <h1 id="profile-name" class="text-5xl md:text-6xl font-bold mb-4 tracking-tight"></h1>
-                <p id="profile-tagline" class="text-xl md:text-2xl mb-6 opacity-90 font-light"></p>
-                <p id="profile-description" class="text-lg mb-8 leading-relaxed opacity-80 max-w-lg mx-auto md:mx-0">
-                </p>
+            <div class="md:w-1/2 flex items-start gap-4 md:gap-8 mt-10 md:mt-0">
+                <!-- QR Code reveal section -->
+                <div class="flex-shrink-0 flex flex-col items-center mt-2">
+                    <button id="qr-toggle-btn" class="w-10 h-10 flex items-center justify-center bg-amber-600 text-white rounded-lg shadow-lg hover:bg-amber-500 transition-colors focus:outline-none" aria-label="Show QR Code" onclick="document.getElementById('qr-container').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2z"></path>
+                        </svg>
+                    </button>
+                    <div id="qr-container" class="hidden mt-4 transition-all duration-300">
+                        <img src="assets/qr-code.svg" alt="QR Code" class="w-24 h-24 md:w-32 md:h-32 bg-white rounded-lg p-2 shadow-lg">
+                    </div>
+                </div>
 
-                <div id="social-links" class="flex justify-center md:justify-start space-x-6">
-                    <!-- Social links injected here -->
+                <!-- Text block -->
+                <div class="text-left">
+                    <h1 id="profile-name" class="text-5xl md:text-6xl font-bold mb-4 tracking-tight"></h1>
+                    <p id="profile-tagline" class="text-xl md:text-2xl mb-6 opacity-90 font-light"></p>
+                    <p id="profile-description" class="text-lg mb-8 leading-relaxed opacity-80 max-w-lg">
+                    </p>
+
+                    <div id="social-links" class="flex justify-start space-x-6">
+                        <!-- Social links injected here -->
+                    </div>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
