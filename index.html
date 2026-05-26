@@ -44,10 +44,25 @@
             <div class="md:w-1/2 text-center md:text-left mt-10 md:mt-0">
                 <h1 id="profile-name" class="text-5xl md:text-6xl font-bold mb-4 tracking-tight"></h1>
                 <p id="profile-tagline" class="text-xl md:text-2xl mb-6 opacity-90 font-light"></p>
-                <p id="profile-description" class="text-lg mb-8 leading-relaxed opacity-80 max-w-lg mx-auto md:mx-0">
-                </p>
+                <p id="profile-description" class="text-lg mb-8 leading-relaxed opacity-80 max-w-lg mx-auto md:mx-0"></p>
 
-                <div id="social-links" class="flex justify-center md:justify-start space-x-6">
+                <div id="social-links" class="flex flex-wrap items-center justify-center md:justify-start gap-y-4 gap-x-6">
+                    <div class="relative">
+                        <button id="qr-toggle-btn"
+                            class="px-6 py-3 flex items-center justify-center rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg bg-amber-600 text-white focus:outline-none"
+                            aria-label="Show QR Code"
+                            onclick="document.getElementById('qr-container').classList.toggle('hidden')">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="qr-container" class="hidden absolute left-1/2 -translate-x-1/2 bottom-full mb-4 z-10 transition-all duration-300">
+                            <img src="assets/qr-code.svg" alt="QR Code" class="w-32 h-32 max-w-none bg-white rounded-lg p-2 shadow-2xl">
+                        </div>
+                    </div>
                     <!-- Social links injected here -->
                 </div>
             </div>
