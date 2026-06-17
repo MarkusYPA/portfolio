@@ -48,13 +48,13 @@ window.portfolioConfig = {
       image: "assets/portfolio.png"
 
     },
-/*     {
+    {
       title: "Todos app on AWS",
       description: "Containerized Java Spring Boot and Vue, provisioned to AWS with Terraform. Using ECS Fargate for scaling and RDS for Postgres, accessed via an Application Load Balancer (ALB).",
-      link: "http://java-todos-alb-1939533240.eu-north-1.elb.amazonaws.com/",
+      link: "http://java-todos-alb-393964128.eu-north-1.elb.amazonaws.com/",
       image: "assets/todos.png"
 
-    } */
+    }
   ],
   commercial_projects: [
     {
