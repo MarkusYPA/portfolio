@@ -47,14 +47,14 @@ window.portfolioConfig = {
       link: "https://github.com/MarkusYPA/portfolio",
       image: "assets/portfolio.png"
 
-    },
-    {
-      title: "Todos app on AWS",
-      description: "Containerized Java Spring Boot and Vue, provisioned to AWS with Terraform. Using ECS Fargate for scaling and RDS for Postgres, accessed via an Application Load Balancer (ALB).",
-      link: "http://java-todos-alb-393964128.eu-north-1.elb.amazonaws.com/",
-      image: "assets/todos.png"
-
     }
+    /*     {
+          title: "Todos app on AWS",
+          description: "Containerized Java Spring Boot and Vue, provisioned to AWS with Terraform. Using ECS Fargate for scaling and RDS for Postgres, accessed via an Application Load Balancer (ALB).",
+          link: "http://java-todos-alb-393964128.eu-north-1.elb.amazonaws.com/",
+          image: "assets/todos.png"
+    
+        } */
   ],
   commercial_projects: [
     {
@@ -152,8 +152,8 @@ window.portfolioConfig = {
     /* {
       title: "",
       description: ".",
-      link: "https://github.com/MarkusYPA/",
-      image: "assets/.png"
+      link: "https://github.com/MarkusYPA/...",
+      image: "assets/X.png"
     } */
   ]
 };
